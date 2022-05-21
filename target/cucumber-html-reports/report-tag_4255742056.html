@@ -79,7 +79,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Tek School Retail Website - Sharks</td>
               <td>1</td>
-            <td>16 May 2022, 23:29</td>
+            <td>17 May 2022, 15:05</td>
     </tr>
   </tbody>
 </table>
@@ -132,19 +132,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@Comparison</td>
-          <td      class="passed"    >3</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >1</td>
+          <td      class="passed"    >5</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">5</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="32865465700">32.865</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="49967504600">49.967</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -187,12 +187,12 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">32.865</span>
+  <span class="lead-duration duration">49.967</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Product Comparison</span>
   
@@ -203,7 +203,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
 
   <div class="inner-level hooks-element-before">
@@ -225,7 +225,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">step.definition.Initializer.beforeHooks(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">8.778</span>
+  <span class="lead-duration duration">16.707</span>
 
           </div>
 
@@ -242,9 +242,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -254,14 +254,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">User click on product comparison icon on <span class="argument">&quot;MacBook&quot;</span></span>
   
-  <span class="lead-duration duration">2.319</span>
+  <span class="lead-duration duration">28.038</span>
 
 </div>
 
@@ -287,7 +287,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">User click on product comparison icon onn <span class="argument">&quot;MacBook Air&quot;</span></span>
   
-  <span class="lead-duration duration">0.063</span>
+  <span class="lead-duration duration">0.051</span>
 
 </div>
 
@@ -313,7 +313,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">User should see a message <span class="argument">&quot;Success: You have added MacBook Air to your product comparison!&quot;</span></span>
   
-  <span class="lead-duration duration">0.102</span>
+  <span class="lead-duration duration">0.227</span>
 
 </div>
 
@@ -335,11 +335,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">User click on Product comparison link</span>
   
-  <span class="lead-duration duration">30.379</span>
+  <span class="lead-duration duration">21.532</span>
 
 </div>
 
@@ -347,47 +347,6 @@ $(document).ready(function() {
 
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()='product comparison']&quot;}
-  (Session info: chrome=101.0.4951.54)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-AQ5G0B01', ip: '10.0.0.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Moham\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55526}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 39a365203ca797336a86dd81ef3cbd2d
-*** Element info: {Using=xpath, value=//a[text()='product comparison']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at page.objects.LaptopNoteBookPage.clickProductComparison(LaptopNoteBookPage.java:138)
-	at step.definition.LaptopNoteBookStepDef.user_click_on_product_comparison_link(LaptopNoteBookStepDef.java:101)
-	at &#10045;.User click on Product comparison link(classpath:feature/LaptopNotebook.feature:24)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -402,11 +361,11 @@ Session ID: 39a365203ca797336a86dd81ef3cbd2d
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">User should see Product Comparison Chart</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.117</span>
 
 </div>
 
@@ -433,7 +392,7 @@ Session ID: 39a365203ca797336a86dd81ef3cbd2d
     
 
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -445,13 +404,13 @@ Session ID: 39a365203ca797336a86dd81ef3cbd2d
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">step.definition.Initializer.afterHooks(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">0.563</span>
+  <span class="lead-duration duration">1.280</span>
 
           </div>
 

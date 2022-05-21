@@ -32,14 +32,9 @@ public class LaptopNoteBookStepDef extends Base {
 		logger.info("user click on show all laptop &notebook option");
 	}
 	@Given("User click on MacBook item")
-	public void user_click_on_mac_book_item() {
+	public void user_click_on_mac_book_item() throws TimeoutException, InterruptedException {
 	    //click
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Thread.sleep(5000);
 		laptopNotebook.clickMacBookItem();
 		logger.info("user click on MackBook item");
 	}
@@ -57,8 +52,9 @@ public class LaptopNoteBookStepDef extends Base {
 		logger.info("user should see a success message");
 	}
 	@Then("User should see {string} showed to the cart")
-	public void user_should_see_showed_to_the_cart(String string) {
+	public void user_should_see_showed_to_the_cart(String string) throws TimeoutException, InterruptedException {
 	    //Displayed
+		Thread.sleep(5000);
 		Assert.assertTrue(laptopNotebook.itemDisplayedonCart());
 		logger.info("user should see 1 item showed to the cart");
 		
@@ -95,9 +91,9 @@ public class LaptopNoteBookStepDef extends Base {
 	}
 	
 	@Then("User click on Product comparison link")
-	public void user_click_on_product_comparison_link() {
+	public void user_click_on_product_comparison_link() throws TimeoutException, InterruptedException {
 	    //click
-		
+		Thread.sleep(5000);
 		laptopNotebook.clickProductComparison();
 		logger.info("user click on product comparison link on");
 	}
@@ -121,20 +117,16 @@ public class LaptopNoteBookStepDef extends Base {
 		logger.info("user should get a message you must login");
 	}
 	@When("User click on {string} item")
-	public void user_click_on_item(String string) {
+	public void user_click_on_item(String string) throws TimeoutException, InterruptedException {
 	    //click
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Thread.sleep(5000);
 		laptopNotebook.clickMacBookPro();
 		logger.info("user click on MacBook Pro item");
 	}
 	@Then("User should see {string} price tag is present on UI.")
-	public void user_should_see_price_tag_is_present_on_ui(String string) {
-	    Assert.assertTrue(laptopNotebook.priceTagDisplayed());
+	public void user_should_see_price_tag_is_present_on_ui(String string) throws TimeoutException, InterruptedException {
+	    Thread.sleep(5000);
+		Assert.assertTrue(laptopNotebook.priceTagDisplayed());
 	    logger.info("user should see price tag");
 	}
 }

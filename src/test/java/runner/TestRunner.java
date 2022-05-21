@@ -9,7 +9,7 @@ import utilities.CucumberReportingConfig;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "classpath:feature", // we provide path of feature folder
 		glue = "step.definition", // we provide path of step definition classes
-		tags = "@Comparison", // with tags we will run our test cases
+		tags = "@Register", // with tags we will run our test cases
 		dryRun = false, // DryRun checks if there is any missing step def
 		monochrome = true, // it makes console readable
 		strict = true, // this will mark a scenario failed if one step failed

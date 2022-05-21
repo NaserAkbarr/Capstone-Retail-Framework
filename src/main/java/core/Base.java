@@ -22,7 +22,7 @@ public class Base {
 	 * framework can inherit the property of this class and that is implementation
 	 * of Inheritance concept of OOPS.
 	 */
-public static WebDriver driver;
+public static WebDriver driver; //
 public static Properties properties; // This class will help us read data from .properties files
 public static Logger logger; // this class will help us to log each step of our execution
 private String configPath = ".\\src\\test\\resources\\input\\config.properties"; // this is path to config file

@@ -49,7 +49,7 @@ public class LaptopNoteBookPage extends Base{
 	@FindBy(xpath ="//*[@id=\"content\"]/div[4]/div[3]/div/div[2]/div[2]/button[3]")
 	private WebElement MacBookAirComparisonButton;//done
 	
-	@FindBy(xpath ="//a[text()='product comparison']")
+	@FindBy(xpath ="//*[@id=\"product-category\"]/div[1]/a[2]")
 	private WebElement clickProductComparison;//done
 	
 	@FindBy(xpath = "//strong[normalize-space()='Product Details']")
@@ -64,7 +64,7 @@ public class LaptopNoteBookPage extends Base{
 	@FindBy(xpath = "//a[normalize-space()='MacBook Pro']")
 	private WebElement clickMacBookPro;//done
 	
-	@FindBy(xpath ="//div[@id='product-category']//div[2]//div[1]//div[2]//div[1]//p[1]")
+	@FindBy(xpath ="//*[@id=\"content\"]/div/div[2]/ul[2]/li[1]/h2")
 	private WebElement priceTagDisplayed;//done
 	
 	public boolean isLogoDisplayed() {
