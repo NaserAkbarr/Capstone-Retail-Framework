@@ -187,18 +187,5 @@ public class DesktopsPage extends Base{
 		else
 			return false;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

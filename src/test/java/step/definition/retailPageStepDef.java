@@ -14,6 +14,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import page.objects.retailPage;
+import utilities.Util;
 
 public class retailPageStepDef extends Base{
 
@@ -122,7 +123,9 @@ public class retailPageStepDef extends Base{
 		}
 	    Assert.assertTrue(retail.messageZeroDisplayed());
 	    logger.info("user should see a success message zero");
+	    Util.takeScreenShot();
 	}
+	
 
 	@When("User click on Edit your affiliate information link one")
 	public void user_click_on_link_one() {
@@ -156,6 +159,7 @@ public class retailPageStepDef extends Base{
 	public void user_should_see_a_success_message_two() {
 		Assert.assertTrue(retail.messageTwoDisplayed());
 		logger.info("user should see a success message two");
+		Util.takeScreenShot();
 	}
 
 	@When("User click on {string} link two")
@@ -183,5 +187,6 @@ public class retailPageStepDef extends Base{
 	public void user_should_see_a_message_last(String lastMessage) {
 		Assert.assertTrue(retail.messageLastDisplayed());
 		logger.info("user should see a message last");
+		Util.takeScreenShot();
 	}
 }
